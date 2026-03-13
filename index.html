@@ -78,6 +78,11 @@ tr:hover td{background:#f8fafc;}
 .cbox ul{list-style:none;display:flex;flex-direction:column;gap:5px;}
 .cbox li{font-size:13px;color:#334155;display:flex;align-items:flex-start;gap:8px;}
 .cbox li::before{content:'→';color:#2563eb;font-weight:700;flex-shrink:0;margin-top:1px;}
+.missing-box{background:#fefce8;border:1px solid #fde047;border-radius:12px;padding:15px 18px;margin-bottom:24px;}
+.missing-box h4{font-size:13px;font-weight:700;color:#854d0e;margin-bottom:8px;}
+.missing-box ul{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.missing-box li{font-size:13px;color:#713f12;display:flex;align-items:flex-start;gap:8px;}
+.missing-box li::before{content:'?';color:#ca8a04;font-weight:700;flex-shrink:0;}
 @media(max-width:1100px){.kpi-row{grid-template-columns:repeat(2,1fr);}.concl-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:900px){.concl-grid{grid-template-columns:1fr;}}
 @media(max-width:640px){
@@ -97,7 +102,7 @@ tr:hover td{background:#f8fafc;}
 <div class="page-header">
   <div>
     <h1>📊 Дашборд MotiveMarketing™ — Супра</h1>
-    <div class="meta">Анализ по 4 ресторанам &nbsp;·&nbsp; Зал/Терраса + Доставка/Вынос</div>
+    <div class="meta">01–12.03.2026 vs 02–13.03.2025 &nbsp;·&nbsp; 4 ресторана &nbsp;·&nbsp; Зал + Доставка</div>
   </div>
   <div class="badge-period">🗓 Март 2026</div>
 </div>
@@ -130,27 +135,28 @@ tr:hover td{background:#f8fafc;}
     <div class="kpi-card romani">
       <div class="klabel">Романи</div>
       <div class="kval">10 806 000 ₽</div>
-      <div class="kdyn"><span class="dn">↓Зал −4%</span></div>
+      <div class="kdyn"><span class="dn">↓Зал −4%</span> &nbsp;·&nbsp; <span class="nt">Дост. н/д</span></div>
     </div>
     <div class="kpi-card meore">
       <div class="klabel">Меоре</div>
-      <div class="kval">5 963 000+ ₽</div>
+      <div class="kval">15 471 000 ₽</div>
       <div class="kdyn"><span class="dn">↓Зал −4%</span> &nbsp;·&nbsp; <span class="up">↑Дост. +2%</span></div>
     </div>
   </div>
 
   <div class="share-bar">
-    <div class="share-bar-label">Доля выручки зала (из трёх ресторанов с данными)</div>
+    <div class="share-bar-label">Доля выручки зала по всем 4 ресторанам</div>
     <div class="bar-row">
-      <div class="bar-seg" style="width:34%;background:#6d28d9;">Диди 34%</div>
-      <div class="bar-seg" style="width:33%;background:#2563eb;">Центр 33%</div>
-      <div class="bar-seg" style="width:33%;background:#d97706;">Романи 33%</div>
+      <div class="bar-seg" style="width:27%;background:#6d28d9;">Диди 27%</div>
+      <div class="bar-seg" style="width:26%;background:#2563eb;">Центр 26%</div>
+      <div class="bar-seg" style="width:25%;background:#d97706;">Романи 25%</div>
+      <div class="bar-seg" style="width:22%;background:#059669;">Меоре 22%</div>
     </div>
     <div class="bar-legend">
       <div class="bl-item"><div class="bl-dot" style="background:#6d28d9;"></div>Диди — 11 643 000 ₽</div>
       <div class="bl-item"><div class="bl-dot" style="background:#2563eb;"></div>Центр — 11 250 000 ₽</div>
       <div class="bl-item"><div class="bl-dot" style="background:#d97706;"></div>Романи — 10 806 000 ₽</div>
-      <div class="bl-item"><div class="bl-dot" style="background:#059669;"></div>Меоре — зал н/д</div>
+      <div class="bl-item"><div class="bl-dot" style="background:#059669;"></div>Меоре — 9 508 000 ₽</div>
     </div>
   </div>
 
@@ -159,7 +165,7 @@ tr:hover td{background:#f8fafc;}
     <div class="tbl-scroll"><table>
       <thead><tr><th>Рест.</th><th>Выручка</th><th>Итого</th><th>Ужин/ночь</th><th>Завтр./обед</th><th>ВС-ЧТ 17-07</th><th>ПТ-СБ 17-07</th><th>ПН-ПТ 07-17</th><th>СБ-ВС 07-17</th></tr></thead>
       <tbody>
-        <tr><td><span class="b b-m">Меоре</span></td><td>н/д</td><td><span class="dn">−4%</span></td><td><span class="up">+2%</span></td><td><span class="up">+6%</span></td><td><span class="up">+3%</span></td><td><span class="dn">−1%</span></td><td><span class="up">+2%</span></td><td><span class="dn">−5%</span></td></tr>
+        <tr><td><span class="b b-m">Меоре</span></td><td>9 508 000</td><td><span class="dn">−4%</span></td><td><span class="dn">−7%</span></td><td><span class="nt">0%</span></td><td><span class="nt">0%</span></td><td><span class="dn">🔴−27%</span></td><td><span class="dn">−6%</span></td><td><span class="up">+7%</span></td></tr>
         <tr class="tr-warn"><td><span class="b b-d">Диди</span></td><td>11 643 000</td><td><span class="dn">−2%</span></td><td><span class="dn">−10%</span></td><td><span class="up">+6%</span></td><td><span class="nt">0%</span></td><td><span class="dn">🔴−32%</span></td><td><span class="dn">−1%</span></td><td><span class="up">🟢+14%</span></td></tr>
         <tr class="tr-best"><td><span class="b b-c">Центр</span></td><td>11 250 000</td><td><span class="up">+1%</span></td><td><span class="up">+2%</span></td><td><span class="dn">−1%</span></td><td><span class="up">+3%</span></td><td><span class="dn">−1%</span></td><td><span class="up">+2%</span></td><td><span class="dn">−5%</span></td></tr>
         <tr class="tr-worst"><td><span class="b b-r">Романи</span></td><td>10 806 000</td><td><span class="dn">−4%</span></td><td><span class="up">+2%</span></td><td><span class="dn">−10%</span></td><td><span class="up">+9%</span></td><td><span class="dn">🔴−13%</span></td><td><span class="dn">−11%</span></td><td><span class="dn">−10%</span></td></tr>
@@ -170,10 +176,11 @@ tr:hover td{background:#f8fafc;}
   <div class="cbox">
     <h4>💡 Ключевые наблюдения</h4>
     <ul>
-      <li><strong>ПТ-СБ вечера — самый слабый сегмент:</strong> Диди −32%, Романи −13%, Меоре гости −29%. Единая точка приложения усилий.</li>
-      <li><strong>Центр — единственный с позитивной суммарной динамикой зала (+1%).</li>
-      <li><strong>Диди СБ-ВС утро:</strong> +14% — лучший сегмент зала в сети. Развивать бранч.</li>
-      <li><strong>Романи обед:</strong> выручка −10%, заказы стабильны — проседает средний чек. Нужен стимул на обеденный поток.</li>
+      <li><strong>ПТ-СБ вечера — критическая зона для всех:</strong> Диди −32%, Меоре −27%, Романи −13%. Единственный зал без падения — Центр (−1%).</li>
+      <li><strong>Центр — единственный с позитивной суммарной динамикой зала (+1%).</strong></li>
+      <li><strong>Диди и Меоре СБ-ВС утро:</strong> Диди +14%, Меоре +7% — лидеры бранча.</li>
+      <li><strong>Романи обед:</strong> выручка −10%, заказы стабильны (0%) — проседает средний чек. Нужен стимул на поток.</li>
+      <li><strong>Меоре зал:</strong> чек −3% (2 274 ₽), при этом завтрак −8%. Обед ПН-ПТ чек упал −11%.</li>
     </ul>
   </div>
 </div>
@@ -181,36 +188,36 @@ tr:hover td{background:#f8fafc;}
 <!-- HALL -->
 <div class="section" id="hall">
   <div class="sec-title">🏠 Зал / Терраса <span class="tag">деталь</span></div>
-  <div class="sec-sub">Выручка зала и гости по всем ресторанам</div>
+  <div class="sec-sub">Выручка, заказы, гости, чек — по всем ресторанам</div>
 
   <div class="tbl-wrap">
     <div class="tbl-title">🏠 Выручка зала — сравнение (руб.)</div>
     <div class="tbl-scroll"><table>
-      <thead><tr><th>Сегмент</th><th>Меоре %</th><th>Диди</th><th>Центр</th><th>Романи</th></tr></thead>
+      <thead><tr><th>Сегмент</th><th>Меоре</th><th>Диди</th><th>Центр</th><th>Романи</th></tr></thead>
       <tbody>
-        <tr><td><strong>Итого</strong></td><td><span class="dn">−4%</span></td><td><span class="dn">11 643 000 −2%</span></td><td><span class="up">11 250 000 +1%</span></td><td><span class="dn">10 806 000 −4%</span></td></tr>
-        <tr><td>Ужин/ночь</td><td><span class="up">+2%</span></td><td><span class="dn">5 571 000 −10%</span></td><td><span class="up">6 428 000 +2%</span></td><td><span class="up">5 976 000 +2%</span></td></tr>
-        <tr><td>Завтрак/обед</td><td><span class="up">+6%</span></td><td><span class="up">6 072 000 +6%</span></td><td><span class="dn">4 822 000 −1%</span></td><td><span class="dn">4 830 000 −10%</span></td></tr>
-        <tr><td>ВС-ЧТ 17-07</td><td><span class="up">+3%</span></td><td><span class="nt">4 334 000 &nbsp;0%</span></td><td><span class="up">5 133 000 +3%</span></td><td><span class="up">4 439 000 +9%</span></td></tr>
-        <tr class="tr-worst"><td>ПТ-СБ 17-07</td><td><span class="dn">−1%</span></td><td><span class="dn">1 237 000 🔴−32%</span></td><td><span class="dn">1 295 000 −1%</span></td><td><span class="dn">1 538 000 🔴−13%</span></td></tr>
-        <tr><td>ПН-ПТ 07-17</td><td><span class="up">+2%</span></td><td><span class="dn">3 167 000 −1%</span></td><td><span class="up">2 974 000 +2%</span></td><td><span class="dn">2 572 000 −11%</span></td></tr>
-        <tr class="tr-best"><td>СБ-ВС 07-17</td><td><span class="dn">−5%</span></td><td><span class="up">2 905 000 🟢+14%</span></td><td><span class="dn">1 848 000 −5%</span></td><td><span class="dn">2 258 000 −10%</span></td></tr>
+        <tr><td><strong>Итого</strong></td><td><span class="dn">9 508 000 −4%</span></td><td><span class="dn">11 643 000 −2%</span></td><td><span class="up">11 250 000 +1%</span></td><td><span class="dn">10 806 000 −4%</span></td></tr>
+        <tr><td>Ужин/ночь</td><td><span class="dn">5 010 000 −7%</span></td><td><span class="dn">5 571 000 −10%</span></td><td><span class="up">6 428 000 +2%</span></td><td><span class="up">5 976 000 +2%</span></td></tr>
+        <tr><td>Завтрак/обед</td><td><span class="nt">4 499 000 0%</span></td><td><span class="up">6 072 000 +6%</span></td><td><span class="dn">4 822 000 −1%</span></td><td><span class="dn">4 830 000 −10%</span></td></tr>
+        <tr><td>ВС-ЧТ 17-07</td><td><span class="nt">3 941 000 0%</span></td><td><span class="nt">4 334 000 0%</span></td><td><span class="up">5 133 000 +3%</span></td><td><span class="up">4 439 000 +9%</span></td></tr>
+        <tr class="tr-worst"><td>ПТ-СБ 17-07</td><td><span class="dn">1 069 000 🔴−27%</span></td><td><span class="dn">1 237 000 🔴−32%</span></td><td><span class="dn">1 295 000 −1%</span></td><td><span class="dn">1 538 000 🔴−13%</span></td></tr>
+        <tr><td>ПН-ПТ 07-17</td><td><span class="dn">2 304 000 −6%</span></td><td><span class="dn">3 167 000 −1%</span></td><td><span class="up">2 974 000 +2%</span></td><td><span class="dn">2 572 000 −11%</span></td></tr>
+        <tr class="tr-best"><td>СБ-ВС 07-17</td><td><span class="up">2 195 000 +7%</span></td><td><span class="up">2 905 000 🟢+14%</span></td><td><span class="dn">1 848 000 −5%</span></td><td><span class="dn">2 258 000 −10%</span></td></tr>
       </tbody>
     </table></div>
   </div>
 
   <div class="tbl-wrap">
-    <div class="tbl-title">👥 Гости зала — Меоре (чел.)</div>
+    <div class="tbl-title">👥 Гости и заказы зала — Меоре (чел./шт.)</div>
     <div class="tbl-scroll"><table>
-      <thead><tr><th>Сегмент</th><th>Гостей</th><th>Доля</th><th>Динамика</th></tr></thead>
+      <thead><tr><th>Сегмент</th><th>Гостей</th><th>Дин. гостей</th><th>Заказов</th><th>Дин. заказов</th><th>Чек, ₽</th><th>Дин. чека</th></tr></thead>
       <tbody>
-        <tr><td><strong>Итого</strong></td><td>4 182</td><td>100%</td><td><span class="dn">−4 чел. (−1%)</span></td></tr>
-        <tr><td>Ужин/ночь</td><td>2 080</td><td>50%</td><td><span class="dn">−17 (−9%)</span></td></tr>
-        <tr><td>Завтрак/обед</td><td>2 102</td><td>50%</td><td><span class="up">+13 (+8%)</span></td></tr>
-        <tr><td>ВС-ЧТ 17-07</td><td>1 685</td><td>40%</td><td><span class="dn">−4 (−2%)</span></td></tr>
-        <tr class="tr-worst"><td>ПТ-СБ 17-07</td><td>395</td><td>9%</td><td><span class="dn">🔴−82 (−29%)</span></td></tr>
-        <tr><td>ПН-ПТ 07-17</td><td>1 082</td><td>26%</td><td><span class="up">+6 (+6%)</span></td></tr>
-        <tr class="tr-best"><td>СБ-ВС 07-17</td><td>1 020</td><td>24%</td><td><span class="up">+32 (+10%)</span></td></tr>
+        <tr><td><strong>Итого</strong></td><td>4 182</td><td><span class="dn">−4 (−1%)</span></td><td>1 643</td><td><span class="nt">0 (0%)</span></td><td>2 274</td><td><span class="dn">−66 (−3%)</span></td></tr>
+        <tr><td>Ужин/ночь</td><td>2 080</td><td><span class="dn">−17 (−9%)</span></td><td>858</td><td><span class="dn">−4 (−5%)</span></td><td>2 408</td><td><span class="up">+49 (+2%)</span></td></tr>
+        <tr><td>Завтрак/обед</td><td>2 102</td><td><span class="up">+13 (+8%)</span></td><td>785</td><td><span class="up">+4 (+6%)</span></td><td>2 140</td><td><span class="dn">−177 (−8%)</span></td></tr>
+        <tr><td>ВС-ЧТ 17-07</td><td>1 685</td><td><span class="dn">−4 (−2%)</span></td><td>697</td><td><span class="up">+2 (+3%)</span></td><td>2 339</td><td><span class="up">+64 (+3%)</span></td></tr>
+        <tr class="tr-worst"><td>ПТ-СБ 17-07</td><td>395</td><td><span class="dn">🔴−82 (−29%)</span></td><td>161</td><td><span class="dn">🔴−31 (−28%)</span></td><td>2 705</td><td><span class="up">+85 (+3%)</span></td></tr>
+        <tr><td>ПН-ПТ 07-17</td><td>1 082</td><td><span class="up">+6 (+6%)</span></td><td>431</td><td><span class="nt">0 (+1%)</span></td><td>2 130</td><td><span class="dn">−268 (−11%)</span></td></tr>
+        <tr class="tr-best"><td>СБ-ВС 07-17</td><td>1 020</td><td><span class="up">+32 (+10%)</span></td><td>354</td><td><span class="up">+13 (+12%)</span></td><td>2 152</td><td><span class="dn">−76 (−3%)</span></td></tr>
       </tbody>
     </table></div>
   </div>
@@ -229,6 +236,16 @@ tr:hover td{background:#f8fafc;}
         <tr><td>СБ-ВС 07-17</td><td>н/д</td><td>~23%</td><td><span class="nt">н/д</span></td></tr>
       </tbody>
     </table></div>
+  </div>
+
+  <div class="missing-box">
+    <h4>⚠️ Недостающие данные по залу</h4>
+    <ul>
+      <li>Меоре зал — выручка теперь добавлена ✅</li>
+      <li>Диди зал — заказы, гости, чек на гостя по всем сегментам</li>
+      <li>Центр зал — заказы, гости, чек на гостя по всем сегментам</li>
+      <li>Романи зал — заказы ПН-ПТ и СБ-ВС; гости и чек по всем сегментам</li>
+    </ul>
   </div>
 </div>
 
@@ -272,10 +289,19 @@ tr:hover td{background:#f8fafc;}
   <div class="cbox">
     <h4>💡 Инсайты по доставке</h4>
     <ul>
-      <li><strong>Диди:</strong> лидер роста +9%, все сегменты в плюсе. Вечера ПТ-СБ +16%, ВС-ЧТ +17% — очевидный апсайд выходных вечеров доставки.</li>
-      <li><strong>Центр:</strong> выручка −8%, заказы −18%. ПТ-СБ — выручка −26%, заказы −21%. Чек растёт (+12%), но аудитория сокращается.</li>
+      <li><strong>Диди:</strong> лидер роста +9%, все сегменты в плюсе. ПТ-СБ +16%, ВС-ЧТ +17% — апсайд вечеров выходных.</li>
+      <li><strong>Центр:</strong> выручка −8%, заказы −18%. ПТ-СБ — выручка −26%, заказы −21%. Чек растёт (+12%), но аудитория уходит.</li>
       <li><strong>Меоре:</strong> +2% итого. Лучший сегмент — СБ-ВС утро +9%. Аудитория бранч утро в выходные.</li>
-      <li><strong>Центр чек ПН-ПТ:</strong> 4 411 ₽/гость (+15%) — максимальный чек в доставке сети.</li>
+      <li><strong>Романи доставка:</strong> данные не переданы — необходимо добавить.</li>
+    </ul>
+  </div>
+
+  <div class="missing-box">
+    <h4>⚠️ Недостающие данные по доставке</h4>
+    <ul>
+      <li>Романи — выручка, заказы, гости, чек доставки (все сегменты)</li>
+      <li>Меоре — заказы и гости доставки по сегментам; чек на гостя доставки</li>
+      <li>Диди — заказы, гости и чек доставки по сегментам</li>
     </ul>
   </div>
 </div>
@@ -290,10 +316,10 @@ tr:hover td{background:#f8fafc;}
     <div class="tbl-scroll"><table>
       <thead><tr><th>Рест.</th><th>Выр. зала</th><th>Дин. зала</th><th>Выр. дост.</th><th>Дин. дост.</th></tr></thead>
       <tbody>
+        <tr class="tr-worst"><td><span class="b b-m">Меоре</span></td><td>1 069 000</td><td><span class="dn">🔴−27%</span></td><td>816 000</td><td><span class="dn">−3%</span></td></tr>
         <tr class="tr-worst"><td><span class="b b-d">Диди</span></td><td>1 237 000</td><td><span class="dn">🔴−32%</span></td><td>1 105 000</td><td><span class="up">🟢+16%</span></td></tr>
         <tr><td><span class="b b-c">Центр</span></td><td>1 295 000</td><td><span class="dn">−1%</span></td><td>527 000</td><td><span class="dn">🔴−26%</span></td></tr>
         <tr class="tr-worst"><td><span class="b b-r">Романи</span></td><td>1 538 000</td><td><span class="dn">🔴−13%</span></td><td>н/д</td><td>н/д</td></tr>
-        <tr><td><span class="b b-m">Меоре</span></td><td>н/д</td><td><span class="dn">−1%</span></td><td>816 000</td><td><span class="dn">−3%</span></td></tr>
       </tbody>
     </table></div>
   </div>
@@ -303,10 +329,10 @@ tr:hover td{background:#f8fafc;}
     <div class="tbl-scroll"><table>
       <thead><tr><th>Рест.</th><th>Выр. зала</th><th>Дин. зала</th><th>Выр. дост.</th><th>Дин. дост.</th></tr></thead>
       <tbody>
+        <tr class="tr-best"><td><span class="b b-m">Меоре</span></td><td>2 195 000</td><td><span class="up">+7%</span></td><td>1 477 000</td><td><span class="up">🟢+9%</span></td></tr>
         <tr class="tr-best"><td><span class="b b-d">Диди</span></td><td>2 905 000</td><td><span class="up">🟢+14%</span></td><td>1 647 000</td><td><span class="up">+2%</span></td></tr>
         <tr><td><span class="b b-c">Центр</span></td><td>1 848 000</td><td><span class="dn">−5%</span></td><td>1 412 000</td><td><span class="dn">🔴−15%</span></td></tr>
         <tr><td><span class="b b-r">Романи</span></td><td>2 258 000</td><td><span class="dn">−10%</span></td><td>н/д</td><td>н/д</td></tr>
-        <tr class="tr-best"><td><span class="b b-m">Меоре</span></td><td>н/д</td><td><span class="dn">−5%</span></td><td>1 477 000</td><td><span class="up">🟢+9%</span></td></tr>
       </tbody>
     </table></div>
   </div>
@@ -316,10 +342,10 @@ tr:hover td{background:#f8fafc;}
     <div class="tbl-scroll"><table>
       <thead><tr><th>Рест.</th><th>Выр. зала</th><th>Дин. зала</th><th>Выр. дост.</th><th>Дин. дост.</th></tr></thead>
       <tbody>
+        <tr><td><span class="b b-m">Меоре</span></td><td>2 304 000</td><td><span class="dn">−6%</span></td><td>1 831 000</td><td><span class="dn">−2%</span></td></tr>
         <tr class="tr-best"><td><span class="b b-d">Диди</span></td><td>3 167 000</td><td><span class="dn">−1%</span></td><td>2 207 000</td><td><span class="up">+6%</span></td></tr>
         <tr class="tr-best"><td><span class="b b-c">Центр</span></td><td>2 974 000</td><td><span class="up">+2%</span></td><td>1 950 000</td><td><span class="dn">−2%</span></td></tr>
         <tr class="tr-warn"><td><span class="b b-r">Романи</span></td><td>2 572 000</td><td><span class="dn">🔴−11%</span></td><td>н/д</td><td>н/д</td></tr>
-        <tr><td><span class="b b-m">Меоре</span></td><td>н/д</td><td><span class="up">+2%</span></td><td>1 831 000</td><td><span class="dn">−2%</span></td></tr>
       </tbody>
     </table></div>
   </div>
@@ -333,12 +359,12 @@ tr:hover td{background:#f8fafc;}
   <div class="concl">
     <h3>🎯 Сеть: итоги периода</h3>
     <div class="concl-grid">
-      <div class="ci good"><h5>🟢 Лидер: Диди доставка</h5><p>Диди доставка +9% — единственный канал с ростом во всех сегментах. ПТ-СБ +16%, ВС-ЧТ +17%. Масштабировать в приоритете.</p></div>
-      <div class="ci alrt"><h5>🔴 ПТ-СБ вечера зала</h5><p>Диди −32%, Романи −13%, Меоре гости −29%. Критическое падение. Обычно — event-активация выходных вечеров.</p></div>
-      <div class="ci warn"><h5>⚠️ Центр доставка</h5><p>ȡ28%, заказы −18%, чек +12%. Аудитория уходит. Требуется работа с удержанием: оффер первого заказа, A/B тест ПТ-СБ.</p></div>
-      <div class="ci good"><h5>☀️ Бранч утро выходных</h5><p>Диди зал +14%, Меоре доставка +9%, гости Меоре +10%. Концепция бранч + гео-реклама на выходные утра.</p></div>
-      <div class="ci warn"><h5>⚠️ Романи: обед и вечера</h5><p>Обед −10%, ПН-ПТ −11%, ПТ-СБ −13%. Ужин ВС-ЧТ растёт +9%. Стимул на обеденный поток и работа с пт-сб вечерами.</p></div>
-      <div class="ci good"><h5>💼 Центр зал: стабильно</h5><p>Зал +1%: бизнес-вечера ВС-ЧТ +3%, будний обед +2%. Наиболее стабильный ресторан сети.</p></div>
+      <div class="ci good"><h5>🟢 Лидер: Диди доставка</h5><p>Диди доставка +9% — рост во всех сегментах. ПТ-СБ +16%, ВС-ЧТ +17%. Масштабировать в приоритете.</p></div>
+      <div class="ci alrt"><h5>🔴 ПТ-СБ вечера зала</h5><p>Диди −32%, Меоре −27%, Романи −13%. Критическое падение в 3 из 4 ресторанов. Нужна event-активация.</p></div>
+      <div class="ci warn"><h5>⚠️ Центр доставка</h5><p>−8%, заказы −18%, чек +12%. Аудитория уходит. Удержание: оффер первого заказа, A/B тест ПТ-СБ.</p></div>
+      <div class="ci good"><h5>☀️ Бранч утро выходных</h5><p>Диди зал +14%, Меоре зал +7%, Меоре доставка +9%. Точка роста сети — развивать бранч концепцию.</p></div>
+      <div class="ci warn"><h5>⚠️ Меоре зал: чек падает</h5><p>Чек −3% (2 274 ₽). Завтрак −8% чека, ПН-ПТ −11%. Гости утром растут (+8%), но тратят меньше. Нужен апсейл.</p></div>
+      <div class="ci warn"><h5>⚠️ Романи: обед и вечера</h5><p>Обед −10% выручки при стабильных заказах. ПН-ПТ −11%, ПТ-СБ −13%. Нужен стимул на средний чек.</p></div>
     </div>
   </div>
 
@@ -347,10 +373,10 @@ tr:hover td{background:#f8fafc;}
     <div class="tbl-scroll"><table>
       <thead><tr><th>Ресторан</th><th>Ситуация</th><th>Действие #1</th><th>Действие #2</th></tr></thead>
       <tbody>
-        <tr class="tr-best"><td><span class="b b-d">Диди</span></td><td>Зал −2% / Дост. 🟢+9%</td><td>Масшт. доставку ПТ-СБ</td><td>Развивать бранч СБ-ВС</td></tr>
-        <tr class="tr-worst"><td><span class="b b-r">Романи</span></td><td>Зал −4%: обед −10%, ПТ-СБ −13%</td><td>Акции на обед ПН-ПТ</td><td>Антикризисная работа ПТ-СБ</td></tr>
-        <tr><td><span class="b b-c">Центр</span></td><td>Зал +1% / Дост. 🔴−8%</td><td>Удержание аудитории</td><td>Стимул доставки ПТ-СБ</td></tr>
-        <tr><td><span class="b b-m">Меоре</span></td><td>Зал −4% / Дост. +2%</td><td>Развить бранч СБ-ВС</td><td>Усилить вечера ПТ-СБ</td></tr>
+        <tr class="tr-best"><td><span class="b b-d">Диди</span></td><td>Зал −2% / Дост. 🟢+9%</td><td>Масшт. доставку ПТ-СБ</td><td>Развивать бранч СБ-ВС</td></tr>
+        <tr class="tr-worst"><td><span class="b b-r">Романи</span></td><td>Зал −4%: обед −10%, ПТ-СБ −13%</td><td>Акции на обед + апсейл чека</td><td>Антикризис ПТ-СБ вечер</td></tr>
+        <tr><td><span class="b b-c">Центр</span></td><td>Зал +1% / Дост. 🔴−8%</td><td>Удержание аудитории доставки</td><td>Стимул доставки ПТ-СБ</td></tr>
+        <tr><td><span class="b b-m">Меоре</span></td><td>Зал −4% / Дост. +2%</td><td>Апсейл на завтрак и ПН-ПТ</td><td>Бранч СБ-ВС + ПТ-СБ вечер</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -358,9 +384,9 @@ tr:hover td{background:#f8fafc;}
   <div class="cbox">
     <h4>💡 Топ-3 приоритета маркетинга</h4>
     <ul>
-      <li><strong>СРОЧНО — ПТ-СБ вечера зала:</strong> event-активация (Диди, Романи, Меоре) — спецменю, анонсы, время выхода.</li>
+      <li><strong>СРОЧНО — ПТ-СБ вечера зала:</strong> event-активация (Диди, Романи, Меоре) — спецменю, анонсы, вечерний трафик.</li>
       <li><strong>СРОЧНО — Центр доставка:</strong> A/B тест оффера первого заказа, промо ПТ-СБ — вернуть оттекающую аудиторию.</li>
-      <li><strong>РОСТ — бранч + выходной завтрак:</strong> Диди +14%, Меоре +9% Дост. СБ-ВС — геореклама и концепция бранча.</li>
+      <li><strong>РОСТ — бранч СБ-ВС:</strong> Диди +14%, Меоре зал +7% и дост. +9% — геореклама и концепция выходного бранча.</li>
     </ul>
   </div>
 </div>
